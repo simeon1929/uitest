@@ -405,6 +405,16 @@ footer span {
         grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 15px;
   }
+  .services {
+    padding: 50px 0;
+  }
+  .services h2, .gallery h2, .contactUs h2 {
+    font-size: 32px !important;
+  }
+  .gallery h3 {
+    font-size: 26px;
+    line-height: 30px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -421,8 +431,8 @@ footer span {
   .services .col-md-3:last-child {
     padding-bottom: 0;
   }
-  .services .col-xs-12 {
-    padding-bottom: 15px;
+  .services h3 {
+    line-height: 30px;
   }
   .gallery .grid {
     -ms-grid-columns: 1fr 1fr;
