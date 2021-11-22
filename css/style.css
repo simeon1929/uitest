@@ -429,5 +429,12 @@ footer span {
         grid-template-columns: 1fr 1fr;
     grid-row-gap: 15px;
   }
+  .home__banner {
+    height: inherit;
+    padding: 200px 0 300px;
+  }
+  .logo img {
+    width: 110px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
