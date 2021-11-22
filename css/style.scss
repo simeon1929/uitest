@@ -103,6 +103,9 @@ body {
     font-size: 14px;
     line-height: 24px;
 }
+.close {
+    display: none;
+}
 header {
     background-color:$bg__primarycolor;
     padding: 10px 0;
@@ -302,13 +305,11 @@ footer {
         overflow-x: hidden;
         position: relative;
     }
-    body, header,  nav  {
-        transition: all 0.3s ease;
+    nav, body, header  {
+        transition: all 0.5s linear;
     }
-    body  {
-        &.activeMenu {
-            right: 240px;
-        }
+    .close {
+        display: block;
     }
     header {
         nav {
@@ -320,6 +321,7 @@ footer {
             z-index: 1;
             height: 100%;
             display: none;
+            z-index: 9999;
             &.activeMenu {
                 display: block;
                 right: 0px;
@@ -354,6 +356,30 @@ footer {
                 padding: 1px 0;
             }
         }
+    }
+    #close_side_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        display: none;
+        z-index: 1031;
+        opacity: 0.5;
+        cursor: pointer; 
+    }
+    
+    .close img {
+        position: absolute;
+        right: 0;
+        width: 40px;
+        padding: 5px;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 50%;
     }
     .gallery .grid {
         grid-template-columns: 1fr 1fr 1fr;
