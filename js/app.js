@@ -1,5 +1,3 @@
-
-
 $(window).scroll(function() 
         {
         if ($(this).scrollTop() > 100)
@@ -8,8 +6,6 @@ $(window).scroll(function()
            $('header').removeClass("fixedSticky");
 });
 
- 
-
 $(document).ready(function() {
         $("nav a").on("click", function (event) {
           event.preventDefault();
@@ -17,9 +13,6 @@ $(document).ready(function() {
         });
         
 });
-
-
-
 
 /*Menu Onclick*/
 let sideMenuToggle = $(".triger");
