@@ -456,6 +456,9 @@ footer span {
 }
 
 @media only screen and (max-width: 600px) {
+  header {
+    padding: 7px 0;
+  }
   .services .col-md-3 {
     width: 100%;
     padding-bottom: 30px;
